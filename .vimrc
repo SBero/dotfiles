@@ -3,7 +3,10 @@ set nocompatible               " be iMproved
 
  set rtp+=~/.vim/bundle/vundle/
  call vundle#rc()
-
+ set encoding=utf-8
+ set nocompatible
+ set t_Co=256
+ set laststatus=2
  " let Vundle manage Vundle
  " required! 
  Bundle 'gmarik/vundle'
@@ -24,7 +27,13 @@ set nocompatible               " be iMproved
  " Bundle 'file:///Users/gmarik/path/to/plugin'
 
  " ...
- Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+ "Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+ Bundle 'bling/vim-airline'
+
+ " Airline Configurations
+ let g:airline_powerline_fonts = 1
+ let g:airline_theme='murmur'
+ let g:Powerline_symbols='fancy'
 
  filetype plugin indent on     " required!
  "
@@ -36,3 +45,4 @@ set nocompatible               " be iMproved
  "
  " see :h vundle for more details or wiki for FAQ
  " NOTE: comments after Bundle command are not allowed..
+ syntax enable
