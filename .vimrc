@@ -1,5 +1,5 @@
-set nocompatible               " be iMproved
- filetype off                   " required!
+set nocompatible
+ filetype off
 
  set rtp+=~/.vim/bundle/vundle/
  call vundle#rc()
@@ -25,7 +25,7 @@ set nocompatible               " be iMproved
  Bundle 'git://git.wincent.com/command-t.git'
  " git repos on your local machine (ie. when working on your own plugin)
  " Bundle 'file:///Users/gmarik/path/to/plugin'
-
+ Bundle 'file://Users/sbero/.vim/bundle/nerdtree'
  " ...
  "Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
  Bundle 'bling/vim-airline'
@@ -34,6 +34,7 @@ set nocompatible               " be iMproved
  let g:airline_powerline_fonts = 1
  let g:airline_theme='murmur'
  let g:Powerline_symbols='fancy'
+ let g:airline#extensions#tabline#enabled = 1
 
  filetype plugin indent on     " required!
  "
