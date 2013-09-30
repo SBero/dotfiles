@@ -7,6 +7,11 @@ set nocompatible
  set nocompatible
  set t_Co=256
  set laststatus=2
+ set number
+ set tabstop=2
+ set expandtab
+ set shiftwidth=2
+ set softtabstop=2
  " let Vundle manage Vundle
  " required! 
  Bundle 'gmarik/vundle'
@@ -25,11 +30,12 @@ set nocompatible
  Bundle 'git://git.wincent.com/command-t.git'
  " git repos on your local machine (ie. when working on your own plugin)
  " Bundle 'file:///Users/gmarik/path/to/plugin'
- Bundle 'file://Users/sbero/.vim/bundle/nerdtree'
+" Bundle 'file://Users/sbero/.vim/bundle/nerdtree'
  " ...
  "Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
  Bundle 'bling/vim-airline'
-
+ Bundle 'tpope/vim-rails'
+ Bundle 'scrooloose/nerdtree'
  " Airline Configurations
  let g:airline_powerline_fonts = 1
  let g:airline_theme='murmur'
